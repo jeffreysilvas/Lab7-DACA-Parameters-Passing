@@ -76,7 +76,7 @@ public class Main
         //N/A
 
         //OUTPUT SECTION
-        System.out.println(formatCard(surname, givenName, category, cardNum, birthCountry, termsAndConditions,
+        System.out.print(formatCard(surname, givenName, category, cardNum, birthCountry, termsAndConditions,
                 sex, uscisNum, dateOfBirth, validDate, expireDate));
 
     }
