@@ -88,8 +88,8 @@ public class Main
         String card = "";
         
         card += String.format("╔══════════════════════════════════════════════════════════════════════╗%n");
-        card += card += String.format("║%35s%35s║%n", TITLE_USA, "");
-        card += card += String.format("║%60s%10s║%n", TITLE_EAC, "");
+        card += String.format("║%35s%35s║%n", TITLE_USA, "");
+        card += String.format("║%60s%10s║%n", TITLE_EAC, "");
         card += String.format("║%-25s%-45s║%n", "", LABEL_SURNAME);
         card += String.format("║%-25s%-45s║%n", "", surname);
         card += String.format("║%-25s%-45s║%n", ASCII_ART_0, LABEL_GIVEN_NAME);
