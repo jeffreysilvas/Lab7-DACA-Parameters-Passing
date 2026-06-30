@@ -76,7 +76,7 @@ public class Main
         //N/A
 
         //OUTPUT SECTION
-        System.out.print(formatCard(surname, givenName, category, cardNum, birthCountry, termsAndConditions,
+        System.out.println(formatCard(surname, givenName, category, cardNum, birthCountry, termsAndConditions,
                 sex, uscisNum, dateOfBirth, validDate, expireDate));
 
     }
@@ -87,7 +87,7 @@ public class Main
                                     String dateOfBirth, String validDate, String expireDate) {
         String card = "";
         
-        card += String.format("╔══════════════════════════════════════════════════════════════════════╗%n");
+        card += String.format("╔══════════════════════════════════════════════════════════════════════╗\n");
         card += String.format("║%35s%35s║%n", TITLE_USA, "");
         card += String.format("║%60s%10s║%n", TITLE_EAC, "");
         card += String.format("║%-25s%-45s║%n", "", LABEL_SURNAME);
@@ -110,6 +110,6 @@ public class Main
     }
 
     public static String formatDate(int month, int day, int year) {
-        return String.format("%02d/%02d/%4d", month, day, year);
+        return String.format("%02d/%02d/%04d", month, day, year);
     }
 }
